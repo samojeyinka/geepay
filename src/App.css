@@ -1,4 +1,129 @@
-.navbar a.active {
-  color: rgb(34 197 94);
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+:root{
+  --primary-clr:#FFFFFF;
+  --secondary-clr:#F7F8FA;
+  --border-clr:#EBECF2;
+  --txt-gray:#898989;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+.app{
+  display: flex;
+  gap: 2rem;
+}
+
+
+ .navbar{
+  width: fit-content;
+  background:var(--secondary-clr);
+  min-height: 100vh;
+  border-right: 2px solid var(--border-clr);
+ }
+
+ .navbar .logo_box{
+  width: 2.6rem;
+  height: 2.6rem;
+  margin-bottom: .7rem;
+ }
+
+ .navbar .logo_box img{
+  width: 100%;
+  height: 100%;
+ }
+
+ .navbar ul{
+  padding: 1.8rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+
+ }
+
+ .top_nav_box,.bottom_nav_box{
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  
+ }
+
+
+ 
+ .navbar img{
+  width: 1.7rem;
+  
+ }
+
+
+ .navbar ul a{
+  display: flex;
+  align-items: center;
+  gap:.6rem;
+ }
+
+
+
+ nav a{
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--txt-gray);
+  
+  
  }
  
+ .navbar a.active {
+  color: rgb(34 197 94);
+ }
+
+ .navbar li img:hover , .navbar li a:hover{
+  transform: scale(1.05);
+  transition: .4s ease-in-out;
+ }
+
+ .navbar .switch_box{
+  padding: .4rem;
+  width: fit-content;
+  background: var(--primary-clr);
+  border-radius: 100px;
+ }
+ .navbar .switch_flex{
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+ }
+
+ .nav_handle{
+  display: flex;
+  align-items: center;
+  gap:.6rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--txt-gray);
+  cursor: pointer;
+}
+
+.navbar li span{
+
+  overflow: hidden;
+
+}
