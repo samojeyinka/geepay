@@ -1,6 +1,8 @@
 import React from 'react';
 import Header from '../components/Header';
 import BarChart from '../components/BarChartBox';
+import { Link } from 'react-router-dom';
+import { user,view } from '../assets/assets';
 
 const Dashboard = () => {
 
@@ -10,12 +12,82 @@ const Dashboard = () => {
 
       <main className='db-main-flex'>
         <div className='db-main-left'>
-          <div className='sales-trend'><h1>Charts</h1>
+          <div className='sales-trend'>
+            <h1>Sales Trends</h1>
             <div className='chart-box'>
               <BarChart />
             </div>
           </div>
-          <div className='last-orders'><h1>Last Orders</h1></div>
+          <div className='last-orders'>
+            <div className='lo-flex'>
+            <h1>Last Orders</h1>
+            <Link to='/see-all'>See All</Link>
+            </div>
+            {/* Table */}
+
+          <table>
+            <thead>
+              <th>Name</th>
+              <th>Date</th>
+              <th>Amount</th>
+              <th>Status</th>
+              <th>Invoice</th>
+            </thead>
+            <tbody>
+              <tr>
+              <td><img src={user}/>
+                <span>Marcus Bergson</span>
+                </td>
+                <td>Nov 15,2023</td>
+                <td><b>$80,000</b></td>
+                <td>Paid</td>
+                <td>
+                  <img src={view}/>
+                  <Link>View</Link>
+                </td>
+              </tr>
+              <tr>
+                <td><img src={user}/>
+                <span>Marcus Bergson</span>
+                </td>
+                
+                <td>Nov 15,2023</td>
+                <td><b>$80,000</b></td>
+                <td>Paid</td>
+                <td>
+                  <img src={view}/>
+                  <Link>View</Link>
+                </td>
+              </tr>
+              <tr>
+              <td><img src={user}/>
+                <span>Marcus Bergson</span>
+                </td>
+                <td>Nov 15,2023</td>
+                <td><b>$80,000</b></td>
+                <td>Paid</td>
+                <td>
+                  <img src={view}/>
+                  <Link>View</Link>
+                </td>
+              </tr>
+              <tr>
+              <td><img src={user}/>
+                <span>Marcus Bergson</span>
+                </td>
+                <td>Nov 15,2023</td>
+                <td><b>$80,000</b></td>
+                <td>Paid</td>
+                <td>
+                  <img src={view}/>
+                  <Link>View</Link>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+
+            </div>
         </div>
 
         <div className='db-main-right'>

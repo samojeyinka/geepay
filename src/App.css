@@ -4,7 +4,7 @@
   --major-clr:#34CAA5;
   --primary-clr: #FFFFFF;
   --secondary-clr: #F7F8FA;
-  --tertiary-clr: #Fdfdfd;
+  --tertiary-clr: #F5F5F5;
   --border-clr: #EBECF2;
   --txt-gray: #898989;
   --txt-dark: #171717;
@@ -49,6 +49,7 @@ Dashboard styles */
 }
 
 .db-main-flex{
+  padding: 1rem;
   width: 100%;
   height: 100%;
   display: flex;
@@ -59,4 +60,39 @@ Dashboard styles */
 .db-main-left.db-main-right{
   display: flex;
   flex-direction: column;
+}
+
+
+.last-orders{
+  background: var(--primary-clr);
+}
+table{
+  width: 100%;
+  text-align: left;
+}
+
+table tr{
+  position: relative;
+}
+
+table tr::after{
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: var(--border-clr);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+table td{
+  text-align: left;
+  padding:.7rem;
+}
+
+table tbody tr td:first-child {
+ display: flex;
+ align-items: center;
+ gap: .5rem;
+
 }
