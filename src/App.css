@@ -128,6 +128,20 @@ table td{
 table td:first-child img{
   width: 1.9rem;
 }
+
+ .view-btn{
+display: flex;
+align-items: center;
+gap: .3rem;
+font-weight: 500;
+color: var(--txt-dark);
+}
+
+.view-btn a{
+  color: var(--txt-dark);
+}
+
+
 table tbody tr td:first-child {
  display: flex;
  align-items: center;

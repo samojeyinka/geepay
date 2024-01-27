@@ -42,7 +42,7 @@ const Dashboard = () => {
                 <td>Nov 15,2023</td>
                 <td><b>$80,000</b></td>
                 <td>Paid</td>
-                <td>
+                <td className='view-btn'>
                   <img src={view}/>
                   <Link>View</Link>
                 </td>
@@ -55,7 +55,7 @@ const Dashboard = () => {
                 <td>Nov 15,2023</td>
                 <td><b>$80,000</b></td>
                 <td>Paid</td>
-                <td>
+                <td className='view-btn'>
                   <img src={view}/>
                   <Link>View</Link>
                 </td>
@@ -67,7 +67,7 @@ const Dashboard = () => {
                 <td>Nov 15,2023</td>
                 <td><b>$80,000</b></td>
                 <td>Paid</td>
-                <td>
+                <td className='view-btn'>
                   <img src={view}/>
                   <Link>View</Link>
                 </td>
@@ -79,7 +79,7 @@ const Dashboard = () => {
                 <td>Nov 15,2023</td>
                 <td><b>$80,000</b></td>
                 <td>Paid</td>
-                <td>
+                <td className='view-btn'>
                   <img src={view}/>
                   <Link>View</Link>
                 </td>
