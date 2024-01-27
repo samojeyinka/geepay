@@ -34,13 +34,13 @@ const BarChartBox = () => {
   return (
     <>
       <BarChart
-        width={800}
-        height={370}
+        width={750}
+        height={350}
         data={data}
         margin={{
           top: 5,
-          right: 30,
-          left: 80,
+          right: 40,
+          left: 5,
           bottom: 5,
         }}
 

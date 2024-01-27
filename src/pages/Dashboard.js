@@ -13,14 +13,14 @@ const Dashboard = () => {
       <main className='db-main-flex'>
         <div className='db-main-left'>
           <div className='sales-trend'>
-            <h1>Sales Trends</h1>
+            <h2>Sales Trends</h2>
             <div className='chart-box'>
-              <BarChart />
+              <BarChart/>
             </div>
           </div>
           <div className='last-orders'>
             <div className='lo-flex'>
-            <h1>Last Orders</h1>
+            <h2>Last Orders</h2>
             <Link to='/see-all'>See All</Link>
             </div>
             {/* Table */}
@@ -33,6 +33,7 @@ const Dashboard = () => {
               <th>Status</th>
               <th>Invoice</th>
             </thead>
+            <br/>
             <tbody>
               <tr>
               <td><img src={user}/>

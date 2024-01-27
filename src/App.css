@@ -57,16 +57,42 @@ Dashboard styles */
   
 }
 
-.db-main-left.db-main-right{
+.db-main-left,.db-main-right{
   display: flex;
   flex-direction: column;
+  gap:1rem;
 }
 
 
-.last-orders{
+.chart-box{
+  margin-top: 2rem;
+}
+
+.last-orders,.sales-trend{
+  padding: 1rem;
   background: var(--primary-clr);
+  border-radius: 14px;
+}
+
+.lo-flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.db-main-flex h2{
+  font-size: 1.3rem;
+  font-weight: 500;
+ color: var(--txt-dark);
+}
+
+.lo-flex a{
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--major-clr);
 }
 table{
+  margin: 2rem 0;
   width: 100%;
   text-align: left;
 }
@@ -85,11 +111,23 @@ table tr::after{
   left: 0;
 }
 
-table td{
-  text-align: left;
-  padding:.7rem;
+
+
+table th{
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--txt-gray);
 }
 
+table td{
+  font-size: .9rem;
+  text-align: left;
+  padding:.5rem 0;
+}
+
+table td:first-child img{
+  width: 1.9rem;
+}
 table tbody tr td:first-child {
  display: flex;
  align-items: center;

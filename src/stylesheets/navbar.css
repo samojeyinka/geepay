@@ -3,6 +3,7 @@
     background: var(--secondary-clr);
     min-height: 100vh;
     border-right: 2px solid var(--border-clr);
+   
 }
 
 .navbar .logo_box {
