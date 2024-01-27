@@ -1,14 +1,20 @@
 import React from 'react';
 import Header from '../components/Header';
+import BarChart from '../components/BarChartBox';
 
 const Dashboard = () => {
+
   return (
     <div className='dashboard'>
       <Header />
 
       <main className='db-main-flex'>
         <div className='db-main-left'>
-          <div className='sales-trend'><h1>Charts</h1></div>
+          <div className='sales-trend'><h1>Charts</h1>
+            <div className='chart-box'>
+              <BarChart />
+            </div>
+          </div>
           <div className='last-orders'><h1>Last Orders</h1></div>
         </div>
 
