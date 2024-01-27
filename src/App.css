@@ -45,3 +45,16 @@ Dashboard styles */
   background: var(--tertiary-clr);
   height: 100%;
 }
+
+.db-main-flex{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.db-main-left.db-main-right{
+  display: flex;
+  flex-direction: column;
+}

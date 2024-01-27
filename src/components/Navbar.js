@@ -98,7 +98,7 @@ const Navbar = () => {
 
           <li className='nav_handle' onClick={handleNav}>
             <img src={nav9} id='expand_icon' />
-            <span className='link_txt'>Expand</span>
+            <span className='link_txt'>Collapse</span>
           </li>
 
         </span>
