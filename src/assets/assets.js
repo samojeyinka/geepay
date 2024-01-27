@@ -12,6 +12,12 @@ import moon from './navIcons/moon.svg'
 import sun from './navIcons/sun.svg'
 import user from './userImage/user.png'
 import view from './ordersIcons/view.svg'
+import boxTick from './StatIcons/box-tick.svg'
+import positiveSL from './StatIcons/positiveSparkLine.svg'
+import negativeSL from './StatIcons/negativeSparkLine.svg'
+import trendUp from './StatIcons/trending-up.svg'
+import trendDwn from './StatIcons/trending-dw.svg'
+import rotateIcon from './StatIcons/3d-rotate.svg'
 
 export{
     logo,
@@ -27,5 +33,11 @@ export{
     moon,
     sun,
     user,
-    view
+    view,
+    boxTick,
+    positiveSL,
+    negativeSL,
+    trendUp,
+    trendDwn,
+    rotateIcon
 }

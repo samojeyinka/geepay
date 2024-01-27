@@ -35,7 +35,7 @@ const BarChartBox = () => {
     <>
       <BarChart
         width={750}
-        height={350}
+        height={300}
         data={data}
         margin={{
           top: 5,
