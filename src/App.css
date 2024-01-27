@@ -336,6 +336,7 @@ table tbody tr td:first-child {
   position: absolute;
   top: 10%;
   right: 3%;
+  display: none;
   z-index: 2;
   background:var(--primary-clr);
   animation: animatezoom .3s ease-in-out;
@@ -343,6 +344,12 @@ table tbody tr td:first-child {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0);
   border: 3px solid var(--border-clr);
   border-radius: 7px;
+}
+
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
 }
 
 .mb-flex{
