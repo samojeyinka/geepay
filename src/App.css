@@ -45,7 +45,7 @@ Dashboard styles */
 .dashboard {
   width: 100%;
   background: var(--tertiary-clr);
-  height: 100%;
+  min-height:100vh;
 }
 
 .db-main-flex {
@@ -164,7 +164,7 @@ table tbody tr td:first-child {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-  height: 45.5%;
+  height: 50%;
 }
 
 .stat-box {
@@ -233,6 +233,7 @@ table tbody tr td:first-child {
 }
 
 .top-platform {
+  height: 50%;
   padding: 1rem;
   background: var(--primary-clr);
   border-radius: 14px;
