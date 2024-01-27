@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { logo, nav1, nav2, nav3, nav4, nav5, nav6, nav7, nav8, nav9, moon, sun } from '../assets/assets'
+import '../stylesheets/navbar.css';
 
 const Navbar = () => {
 

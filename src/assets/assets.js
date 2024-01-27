@@ -10,6 +10,7 @@ import nav8 from './navIcons/nav8.svg'
 import nav9 from './navIcons/nav9.svg'
 import moon from './navIcons/moon.svg'
 import sun from './navIcons/sun.svg'
+import user from './userImage/user.png'
 
 export{
     logo,
@@ -23,5 +24,6 @@ export{
     nav8,
     nav9,
     moon,
-    sun
+    sun,
+    user
 }
