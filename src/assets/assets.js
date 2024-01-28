@@ -18,6 +18,8 @@ import user3 from './ordersIcons/user3.svg'
 import user4 from './ordersIcons/user4.svg'
 import user5 from './ordersIcons/user5.svg'
 import boxTick from './StatIcons/box-tick.svg'
+import sCart from './StatIcons/shopping-cart.svg'
+import coin from './StatIcons/coin.svg'
 import positiveSL from './StatIcons/positiveSparkLine.svg'
 import negativeSL from './StatIcons/negativeSparkLine.svg'
 import trendUp from './StatIcons/trending-up.svg'
@@ -40,6 +42,8 @@ export{
     user,
     view,
     boxTick,
+    coin,
+    sCart,    
     positiveSL,
     negativeSL,
     trendUp,

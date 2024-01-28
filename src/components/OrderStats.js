@@ -1,5 +1,5 @@
 import React from 'react';
-import { boxTick, positiveSL, negativeSL, trendUp, trendDwn, rotateIcon } from '../assets/assets';
+import { boxTick, coin, sCart, positiveSL, negativeSL, trendUp, trendDwn, rotateIcon } from '../assets/assets';
 
 const OrderStats = () => {
     return (
@@ -51,45 +51,43 @@ const OrderStats = () => {
                         <span>vs. previous month</span>
                     </div>
                 </div>
-                {/* ---------- */}
                 <div className='stat-box'>
                     <div className='stat-box-top'>
                         <div className='box-tick-box'>
-                            <img src={boxTick} />
+                            <img src={sCart} />
                         </div>
                         <div className='box-tick-box'>
-                            <img src={positiveSL} />
+                            <img src={negativeSL} />
                         </div>
                     </div>
                     <div className='stat-box-middle'>
-                        <h4>Total Order</h4>
-                        <h3>350</h3>
+                        <h4>Average Sales</h4>
+                        <h3>1567</h3>
                     </div>
                     <div className='stat-box-btm'>
-                        <button>
-                            <img src={trendUp} />
+                        <button className='negative-btn'>
+                            <img src={trendDwn} />
                             <span>23.5%</span>
                         </button>
 
                         <span>vs. previous month</span>
                     </div>
                 </div>
-                {/* ---------- */}
                 <div className='stat-box'>
                     <div className='stat-box-top'>
                         <div className='box-tick-box'>
-                            <img src={boxTick} />
+                            <img src={coin} />
                         </div>
                         <div className='box-tick-box'>
                             <img src={positiveSL} />
                         </div>
                     </div>
                     <div className='stat-box-middle'>
-                        <h4>Total Order</h4>
-                        <h3>350</h3>
+                        <h4>Total Income</h4>
+                        <h3>$350.000</h3>
                     </div>
                     <div className='stat-box-btm'>
-                        <button>
+                        <button className='positive-btn'>
                             <img src={trendUp} />
                             <span>23.5%</span>
                         </button>
