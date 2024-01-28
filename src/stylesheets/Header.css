@@ -43,6 +43,7 @@
   align-items: center;
   gap: .4rem;
   color: var(--txt-dark);
+  cursor: pointer;
 }
 
 .h-date b{
@@ -106,4 +107,22 @@
 .user_details:hover{
   transform: scale(1.02);
   transition: .4s ease-in-out;
+}
+
+
+
+.calendar{
+  padding: .5rem;
+  width: 18rem;
+  position: absolute;
+  top: 10%;
+  right: 15%;
+  display: none;
+  z-index: 2;
+  background:var(--primary-clr);
+  animation: animatezoom .3s ease-in-out;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0);
+  border: 3px solid var(--border-clr);
+  border-radius: 7px;
 }
