@@ -1,7 +1,7 @@
 .navbar {
     width: fit-content;
     background: var(--secondary-clr);
-    min-height: 100vh;
+    min-height: 100%;
     border-right: 2px solid var(--border-clr);
 
 }

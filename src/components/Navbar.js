@@ -44,7 +44,7 @@ const Navbar = () => {
           <li>
             <NavLink to="/trending">
               <img src={nav2} />
-              <span className='link_txt'>Trending</span>
+              <span className='link_txt'>Analytics</span>
             </NavLink>
           </li>
 
