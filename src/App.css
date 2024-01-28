@@ -555,7 +555,6 @@ width: 1.3rem;
   left: 0;
   display: none;
   z-index: 1;
-  
 }
 
 #invoiceBox{
@@ -673,6 +672,7 @@ color: var(--txt-dark);
   padding: .7rem;
   background: var(--tertiary-clr);
   border-radius: 7px;
+  color: var(--txt-dark);
 }
 
 .ib-total-box{

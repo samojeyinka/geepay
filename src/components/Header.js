@@ -1,5 +1,5 @@
 import React, { useState, useCallback,useEffect } from 'react'
-import { FaSearch, FaCalendar, FaCalendarAlt, FaBell, FaLessThan, FaAngleDown } from 'react-icons/fa'
+import { FaSearch, FaCalendar, FaCalendarAlt, FaBell, FaLessThan, FaAngleDown,FaBars } from 'react-icons/fa'
 import { BiCalendar, BiBell, BiCalendarAlt, BiX, BiCog, BiBarChart, BiBarChartAlt, BiBarChartAlt2, BiComment, BiPlus, BiLogOut, BiPowerOff } from 'react-icons/bi';
 import { user } from '../assets/assets'
 import '../stylesheets/Header.css'
@@ -28,6 +28,22 @@ const Header = () => {
             showCalendar.style.display = 'block';
         } else {
             showCalendar.style.display = 'none';
+        }
+    };
+
+    const handleNav = () => {
+        const mobileNav = document.getElementById('mobileNav');
+        const mobileBlur = document.getElementById('mobileBlur');
+
+        const computedStyle = window.getComputedStyle(mobileNav);
+        const currentDisplay = computedStyle.getPropertyValue('display');
+
+        if (currentDisplay === 'none') {
+            mobileNav.style.display = 'inherit';
+            mobileBlur.style.display = 'inherit';
+        } else {
+            mobileNav.style.display = 'none';
+            mobileBlur.style.display = 'none';
         }
     };
     
@@ -60,10 +76,15 @@ const Header = () => {
 
     return (
         <>
+       
             <header className='header'>
                 <h2>Dashboard</h2>
-                <div className='header_right'>
-
+                <i className='open-nav' onClick={handleNav}>
+                        <FaBars />
+                    </i>
+                <div className='header_right' id="mobileNav">
+                <div className="mobileBlur" id="mobileBlur"></div>
+                    
                     <div className='search_box'>
                         <i>
                             <FaSearch />
@@ -85,7 +106,14 @@ const Header = () => {
                         <i>
                             <BiBell />
                         </i>
+
                     </div>
+                    <div className='m-nf'>
+                        <i>
+                            <BiBell />
+                        </i>
+                        <span className='nf'>Notifications</span>
+                        </div>
 
                     <div className='user_details' onClick={showMenu}>
                         <div className='u_img_box'>
