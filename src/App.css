@@ -181,7 +181,14 @@ table tbody tr td:first-child {
   display: flex;
   align-items: center;
   gap: .5rem;
+}
 
+table .paid-clr{
+  color: var(--major-clr);
+}
+
+table .refund-clr{
+  color: #ff0000;
 }
 
 
