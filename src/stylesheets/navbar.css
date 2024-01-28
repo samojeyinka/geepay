@@ -3,7 +3,7 @@
     background: var(--secondary-clr);
     min-height: 100vh;
     border-right: 2px solid var(--border-clr);
-   
+
 }
 
 .navbar .logo_box {
@@ -80,7 +80,30 @@ nav a {
     display: flex;
     flex-direction: column;
     gap: .6rem;
+    cursor: pointer;
+
 }
+
+.navbar .switch_flex .toggle-icon {
+    padding: .2rem .2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    border-radius: 50%;
+}
+
+.toggle-icon.sun {
+    background-color: var(--lm-sun);
+    color: #fff;
+}
+
+.toggle-icon.moon {
+    background-color: var(--lm-moon);
+    color: var(--moon-clr);
+}
+
+
 
 .nav_handle {
     display: flex;
@@ -95,3 +118,8 @@ nav a {
 .navbar li span {
     overflow: hidden;
 }
+@media screen and (max-width:800px){
+    .navbar{
+        display: none;
+    }
+  }

@@ -2,9 +2,11 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { logo, nav1, nav2, nav3, nav4, nav5, nav6, nav7, nav8, nav9, moon, sun } from '../assets/assets'
 import '../stylesheets/navbar.css';
+import { useTheme } from '../contexts/ThemeContext';
+import {BiSun,BiSolidSun,BiMoon,BiSolidMoon} from 'react-icons/bi'
 
 const Navbar = () => {
-
+  const { theme, toggleTheme} = useTheme();
 
   const handleNav = () => {
     const linkTexts = document.querySelectorAll('.link_txt');
@@ -22,7 +24,8 @@ const Navbar = () => {
 )};
 
   return (
-    <nav className='navbar'>
+    <nav className={`navbar ${theme}`}>
+      
       <ul>
       <span className='top_nav_box'>
         <span className='logo_box'>
@@ -74,9 +77,9 @@ const Navbar = () => {
           </li>
 
           <div className='switch_box'>
-            <div className='switch_flex'>
-              <img src={sun} />
-              <img src={moon} />
+            <div className='switch_flex' onClick={toggleTheme}>
+              <i className='toggle-icon sun'><BiSun/></i>
+              <i className='toggle-icon moon'>  <BiMoon/></i>
             </div>
           </div>
         </span>

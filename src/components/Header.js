@@ -30,6 +30,7 @@ const Header = () => {
             showCalendar.style.display = 'none';
         }
     };
+    
     const showMenu = () => {
         const menu = document.getElementById("menuBox");
         menu.style.display = "inherit";

@@ -34,6 +34,7 @@
   border: none;
   outline: none;
   background:inherit;
+  color: var(--txt-dark);
 
 }
 
@@ -77,6 +78,7 @@
   border: 2px solid var(--border-clr);
   border-radius: 28px;
   cursor: pointer;
+    color: var(--txt-dark);
 }
 
 .u_img_box{
@@ -125,4 +127,10 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0);
   border: 3px solid var(--border-clr);
   border-radius: 7px;
+}
+
+@media screen and (max-width:800px){
+  .search_box,.user_details{
+    display: none;
+  }
 }

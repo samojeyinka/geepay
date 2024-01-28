@@ -3,10 +3,14 @@ import Navbar from './components/Navbar';
 import Products from './pages/Products';
 import Dashboard from './pages/Dashboard';
 import { Routes,Route } from 'react-router-dom';
+import { ThemeProvider, useTheme } from './contexts/ThemeContext';
 
 function App() {
+
+  const { theme, toggleTheme } = useTheme();
+
   return (
-    <div className='app'>
+        <div className={` app ${theme}`}>
     <section className='navbar_section'>
     <Navbar/>
     </section>
