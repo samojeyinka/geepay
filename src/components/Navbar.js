@@ -33,7 +33,7 @@ const handleSidebar = () => {
   if (currentDisplay === 'none') {
     navbar.style.display = 'inherit';
     openSB.style.rotate = 'inherit';
-    openSB.style.left = '20%';
+    openSB.style.left = '25%';
   } else {
     navbar.style.display = 'none';
     openSB.style.rotate = '180deg';
