@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { logo, nav1, nav2, nav3, nav4, nav5, nav6, nav7, nav8, nav9, moon, sun } from '../assets/assets'
 import '../stylesheets/navbar.css';
 import { useTheme } from '../contexts/ThemeContext';
-import {BiSun,BiSolidSun,BiMoon,BiSolidMoon,BiAnchor} from 'react-icons/bi'
+import {BiSun,BiSolidSun,BiMoon,BiSolidMoon,BiAnchor, BiSolidGridAlt} from 'react-icons/bi'
 
 const Navbar = () => {
   const { theme, toggleTheme} = useTheme();
@@ -58,7 +58,10 @@ const handleSidebar = () => {
 
           <li>
             <NavLink to="/">
-              <img src={nav1} />
+              {/* <img src={nav1} /> */}
+              <i className='db-icon'>
+                <BiSolidGridAlt/>
+              </i>
               <span className='link_txt'>Dashboard</span>
             </NavLink>
           </li>

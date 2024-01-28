@@ -65,6 +65,7 @@ a {
 
 .page_section {
   width: 100%;
+  background:var(--tertiary-clr) ;
 }
 
 /* 
