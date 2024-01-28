@@ -206,6 +206,9 @@
   font-size: .8rem;
 }
 
+.user_details i{
+ display: none;
+}
 
 .h-bell{
   display: none;

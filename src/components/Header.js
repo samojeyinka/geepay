@@ -71,6 +71,13 @@ const Header = () => {
     setCurrentDate(getCurrentDate());
   }, []);
 
+ 
+
+  const openPage = () => {
+    const mobileNav = document.getElementById('mobileNav');
+    mobileNav.style.display = 'none';
+  }
+
     return (
         <>
        
@@ -104,7 +111,7 @@ const Header = () => {
                         </i>
 
                     </div>
-                    <div className='m-nf'>
+                    <div className='m-nf' onClick={openPage}>
                         <i>
                             <BiBell />
                         </i>
@@ -115,7 +122,7 @@ const Header = () => {
                         <div className='u_img_box'>
                             <img src={user} />
                         </div>
-                        <div>
+                        <div onClick={openPage}>
                             <p>Justin Bergson</p>
                             <small>Justin@gmail.com </small>
                         </div>
