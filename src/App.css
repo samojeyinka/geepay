@@ -121,6 +121,7 @@ Dashboard styles */
 
 .chart-box {
   margin-top: 2rem;
+  overflow: auto;
 }
 
 .last-orders,
@@ -842,6 +843,25 @@ font-size: 1.2rem;
 }
 
 
+}
+
+
+
+/* Scrolling */
+
+::-webkit-scrollbar {
+  width: 8px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--tertiary-clr);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--major-clr);
 }
 
 
