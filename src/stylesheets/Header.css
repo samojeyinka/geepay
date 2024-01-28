@@ -152,22 +152,22 @@
     flex-direction: column-reverse;
     justify-content: center;
     align-items: flex-start;
-    background: var(--primary-clr);
+    background:var(--tertiary-clr);
     border: 2px solid var(--border-clr);
     border-radius: 7px;
-    z-index: 2;
+    z-index: 50;
     animation: animatezoom .3s ease-in-out;
   }
-  .header_right .mobileBlur{
+  /* .header_right .mobileBlur{
     width: 100%;
     min-height: 100vh;
     background: rgba(0, 0, 0, 0.626);
-    display: n;
-    position: fixed;  
-    top: 60px;
+    display: none;
+    position: absolute;  
+    top:0px;
     left: 0;
-    z-index: -1;
-  }
+    z-index: 1;
+  } */
 
   .search_box{
     width: 100%;
