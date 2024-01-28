@@ -1,11 +1,18 @@
-import React from 'react';
+import React,{useState} from 'react';
 import Header from '../components/Header';
 import BarChart from '../components/BarChartBox';
 import { Link } from 'react-router-dom';
 import OrdersTable from '../components/OrdersTable';
 import OrderStats from '../components/OrderStats';
 
+
 const Dashboard = () => {
+
+  const [selectedInterval, setSelectedInterval] = useState('Monthly');
+
+  const handleIntervalChange = (e) => {
+    setSelectedInterval(e.target.value);
+  };
 
   return (
     <div className='dashboard'>
@@ -14,9 +21,20 @@ const Dashboard = () => {
       <main className='db-main-flex'>
         <div className='db-main-left'>
           <div className='sales-trend'>
+            <div className='st-flex'>
             <h2>Sales Trends</h2>
+            <div className='sb'>
+            <span>Sort by:</span>
+            <select value={selectedInterval} onChange={handleIntervalChange}>
+              <option value="Monthly">Monthly</option>
+              <option value="Weekly">Weekly</option>
+              <option value="Daily">Daily</option>
+            </select>
+          </div>
+            </div>
+            
             <div className='chart-box'>
-              <BarChart />
+            <BarChart selectedInterval={selectedInterval} />
             </div>
           </div>
           <div className='last-orders'>

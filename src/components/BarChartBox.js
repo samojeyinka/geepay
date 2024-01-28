@@ -12,22 +12,35 @@ import {
   Bar,
 } from "recharts";
 
-const BarChartBox = () => {
+const BarChartBox = ({ selectedInterval }) => {
+
+  const getAdjustedSales = (originalSales) => {
+    switch (selectedInterval) {
+      case 'Weekly':
+        return originalSales * 0.5;
+      case 'Daily':
+        return originalSales * 0.9;
+      default:
+        return originalSales;
+    }
+  };
+  
   const data = [
-    { name: "Jan", sales: 5000 },
-    { name: "Feb", sales: 10000 },
-    { name: "Mar", sales: 20000 },
-    { name: "Apr", sales: 30000 },
-    { name: "May", sales: 45000 },
-    { name: "Jun", sales: 32000 },
-    { name: "Jul", sales: 23000 },
-    { name: "Aug", sales: 33000 },
-    { name: "Sep", sales: 39000 },
-    { name: "Oct", sales: 12000 },
-    { name: "Nov", sales: 37000 },
-    { name: "Dec", sales: 43000 }
+    { name: "Jan", sales: getAdjustedSales(5000) },
+    { name: "Feb", sales: getAdjustedSales(10000) },
+    { name: "Mar", sales: getAdjustedSales(20000) },
+    { name: "Apr", sales: getAdjustedSales(30000) },
+    { name: "May", sales: getAdjustedSales(45000) },
+    { name: "Jun", sales: getAdjustedSales(32000) },
+    { name: "Jul", sales: getAdjustedSales(23000) },
+    { name: "Aug", sales: getAdjustedSales(33000) },
+    { name: "Sep", sales: getAdjustedSales(39000)},
+    { name: "Nov", sales: getAdjustedSales(37000) },
+    { name: "Dec", sales: getAdjustedSales(43000) }
 
   ];
+
+
 
   const CurrencyFormatter = (value) => '$' + value.toLocaleString();
 

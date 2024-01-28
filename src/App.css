@@ -59,6 +59,36 @@ Dashboard styles */
 
 }
 
+.st-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.st-flex .sb{
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+} 
+
+.st-flex .sb span{
+  font-weight: 500;
+  color:var(--txt-dark);
+  opacity: .9;
+}
+
+.st-flex .sb select{
+  padding: .1rem .3rem;
+  border-radius: 1rem;
+  color: var(--txt-dark);
+  opacity: .85;
+  cursor: pointer;
+  border: 2px solid var(--border-clr);
+  outline: none;
+}
+
+
+
 .db-main-left,
 .db-main-right {
   display: flex;

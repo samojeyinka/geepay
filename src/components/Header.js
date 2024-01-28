@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react'
+import React, { useState, useCallback,useEffect } from 'react'
 import { FaSearch, FaCalendar, FaCalendarAlt, FaBell, FaLessThan, FaAngleDown } from 'react-icons/fa'
 import { BiCalendar, BiBell, BiCalendarAlt, BiX, BiCog, BiBarChart, BiBarChartAlt, BiBarChartAlt2, BiComment, BiPlus, BiLogOut, BiPowerOff } from 'react-icons/bi';
 import { user } from '../assets/assets'
@@ -41,6 +41,22 @@ const Header = () => {
         const menu = document.getElementById("menuBox");
         menu.style.display = "none";
     }
+
+    //date
+  const [currentDate, setCurrentDate] = useState('');
+
+  useEffect(() => {
+  
+    const getCurrentDate = () => {
+      const options = { month: 'long', day: 'numeric', year: 'numeric' };
+      const today = new Date();
+      const formattedDate = today.toLocaleDateString('en-US', options);
+      return formattedDate;
+    };
+
+    setCurrentDate(getCurrentDate());
+  }, []);
+
     return (
         <>
             <header className='header'>
@@ -58,7 +74,7 @@ const Header = () => {
                         <i>
                             <BiCalendar />
                         </i>
-                        <b>November 15,2023</b>
+                        <b>{currentDate}</b>
                         <div className='calendar' id='calendar'>
                             <Calendar value={value} onChange={onChange} color="green" />
                         </div>
