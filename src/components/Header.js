@@ -33,17 +33,14 @@ const Header = () => {
 
     const handleNav = () => {
         const mobileNav = document.getElementById('mobileNav');
-        const mobileBlur = document.getElementById('mobileBlur');
 
         const computedStyle = window.getComputedStyle(mobileNav);
         const currentDisplay = computedStyle.getPropertyValue('display');
 
         if (currentDisplay === 'none') {
             mobileNav.style.display = 'inherit';
-            mobileBlur.style.display = 'inherit';
         } else {
             mobileNav.style.display = 'none';
-            mobileBlur.style.display = 'none';
         }
     };
     
@@ -83,7 +80,6 @@ const Header = () => {
                         <FaBars />
                     </i>
                 <div className='header_right' id="mobileNav">
-                <div className="mobileBlur" id="mobileBlur"></div>
                     
                     <div className='search_box'>
                         <i>

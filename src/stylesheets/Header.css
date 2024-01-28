@@ -6,6 +6,7 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: 2px solid var(--border-clr);
+  
 }
 .header h2{
   font-size: 1.3rem;
@@ -141,10 +142,14 @@
   display: none;
 }
 
+.header_right .mobileBlur{
+  display: none;
+}
+
 @media screen and (max-width:800px){
   .header_right{
-    padding: 1rem;
-    width:95%;
+    padding: 1rem 0 10rem 0;
+    width:96%;
     position: fixed;
     top: 80px;
     left: 2;
@@ -158,16 +163,7 @@
     z-index: 50;
     animation: animatezoom .3s ease-in-out;
   }
-  /* .header_right .mobileBlur{
-    width: 100%;
-    min-height: 100vh;
-    background: rgba(0, 0, 0, 0.626);
-    display: none;
-    position: absolute;  
-    top:0px;
-    left: 0;
-    z-index: 1;
-  } */
+
 
   .search_box{
     width: 100%;
