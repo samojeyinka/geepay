@@ -57,6 +57,11 @@ a {
   display: flex;
 }
 
+.navbar_section{
+  background:var(--secondary-clr);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0);
+
+}
 
 .page_section {
   width: 100%;
@@ -122,6 +127,8 @@ Dashboard styles */
 .chart-box {
   margin-top: 2rem;
   overflow: auto;
+  
+  
 }
 
 .last-orders,
@@ -129,6 +136,7 @@ Dashboard styles */
   padding: 1rem;
   background: var(--primary-clr);
   border-radius: 14px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0);
 }
 
 .lo-flex {
@@ -241,6 +249,7 @@ table .refund-clr{
   flex-direction: column;
   gap: 1rem;
   border-radius: 14px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0);
 }
 
 .stat-box-top {
@@ -298,14 +307,17 @@ table .refund-clr{
   ;
 }
 
+
+/* Top platform */
 .top-platform {
   height: 50%;
   padding: 1rem;
   background: var(--primary-clr);
   border-radius: 14px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0);
 }
 
-/* Top platform */
+
 
 
 .tps {
@@ -314,6 +326,7 @@ table .refund-clr{
   gap: 1rem;
   width: 100%;
   margin: 1.5rem 0;
+  
 
 }
 
@@ -413,6 +426,7 @@ table .refund-clr{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0);
   border: 3px solid var(--border-clr);
   border-radius: 7px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0);
 }
 
   
@@ -723,6 +737,7 @@ color: var(--txt-dark);
 
 @media screen and (max-width:800px){
   .db-main-flex{
+    padding-top: 6rem;
     overflow: hidden;
     flex-direction: column;
   }

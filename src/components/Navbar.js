@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { logo, nav1, nav2, nav3, nav4, nav5, nav6, nav7, nav8, nav9, moon, sun } from '../assets/assets'
 import '../stylesheets/navbar.css';
 import { useTheme } from '../contexts/ThemeContext';
-import {BiSun,BiSolidSun,BiMoon,BiSolidMoon} from 'react-icons/bi'
+import {BiSun,BiSolidSun,BiMoon,BiSolidMoon,BiAnchor} from 'react-icons/bi'
 
 const Navbar = () => {
   const { theme, toggleTheme} = useTheme();
@@ -23,9 +23,31 @@ const Navbar = () => {
   }
 )};
 
+const handleSidebar = () => {
+  const navbar = document.getElementById('navbar');
+  const openSB = document.getElementById('openSB');
+
+  const computedStyle = window.getComputedStyle(navbar);
+  const currentDisplay = computedStyle.getPropertyValue('display');
+
+  if (currentDisplay === 'none') {
+    navbar.style.display = 'inherit';
+    openSB.style.rotate = 'inherit';
+    openSB.style.left = '20%';
+  } else {
+    navbar.style.display = 'none';
+    openSB.style.rotate = '180deg';
+    openSB.style.left = '5%';
+  }
+};
+
   return (
-    <nav className={`navbar ${theme}`}>
-      
+    <div>
+    <i className='open-sidebar' onClick={handleSidebar} id='openSB'>
+                        <BiAnchor />
+    </i>
+    <nav className={`navbar ${theme}`} id='navbar'>
+    
       <ul>
       <span className='top_nav_box'>
         <span className='logo_box'>
@@ -107,6 +129,7 @@ const Navbar = () => {
         </span>
       </ul>
     </nav>
+    </div>
   )
 }
 
