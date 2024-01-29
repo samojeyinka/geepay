@@ -122,7 +122,7 @@ const Header = () => {
                         <div className='u_img_box'>
                             <img src={user} />
                         </div>
-                        <div onClick={openPage}>
+                        <div>
                             <p>Justin Bergson</p>
                             <small>Justin@gmail.com </small>
                         </div>
